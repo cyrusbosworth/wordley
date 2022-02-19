@@ -1,0 +1,82 @@
+:root {
+  --green: #6aaa64;
+  --darkendGreen: #538d4e;
+  --yellow: #c9b458;
+  --darkendYellow: #b59f3b;
+  --lightGray: #d8d8d8;
+  --gray: #86888a;
+  --darkGray: #3a3a3c;
+  --white: #fff;
+  --black: #121213;
+  --orange: #f5793a;
+  --blue: #85c0f9;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.game_board {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.attempt {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  font-size: 26px;
+  border: 2px solid var(--darkGray);
+  height: 3.5rem;
+  width: 3.5rem;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.keyboard {
+  margin-top: 3rem;
+  width: 100%;
+  font-size: 16px;
+}
+.keyboard_row {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  background-color: var(--gray);
+  color: var(--white);
+  height: 3rem;
+  width: 2rem;
+  margin: 2px;
+  font-size: 1.25rem;
+}
+
+.correct {
+  background-color: var(--green);
+}
+
+.inWord {
+  background-color: var(--yellow);
+}
+
+.incorrect {
+  background-color: var(--darkGray);
+}
