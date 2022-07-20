@@ -80,3 +80,53 @@ button {
 .incorrect {
   background-color: var(--darkGray);
 }
+
+.new-puzzle {
+  margin: 0 auto;
+  width: 400px;
+
+  height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.new-puzzle h3 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.new-puzzle input {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  background-color: var(--lightGray);
+}
+
+.new-puzzle label {
+  display: block;
+  text-align: center;
+}
+
+.new-puzzle .add-button {
+  margin: 0 auto;
+  width: 50%;
+  display: block;
+}
+
+.new-puzzle .entered-word {
+  height: 3.5rem;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.new-puzzle .error {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: red;
+  height: 1rem;
+  text-align: center;
+}

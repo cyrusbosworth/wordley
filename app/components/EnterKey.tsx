@@ -26,7 +26,7 @@ function EnterKey() {
         toast('Word not in dictionary');
       }
     } catch (error) {
-      toast('Word not in dictionary');
+      toast('Something went wrong');
     }
   };
 
