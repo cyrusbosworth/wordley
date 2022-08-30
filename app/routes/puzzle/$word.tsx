@@ -1,3 +1,4 @@
+import { Puzzle } from '@prisma/client';
 import React from 'react';
 import { LoaderFunction, useLoaderData } from 'remix';
 import Game from '~/components/Game';
@@ -11,17 +12,18 @@ export const loader: LoaderFunction = async ({ params }: any) => {
   return puzzle;
 };
 
-function Wordley() {
-  const puzzle = useLoaderData();
+function WordleRoute() {
+  const puzzle = useLoaderData<Puzzle>();
 
   return (
     <GuessProvider>
       <GameProvider word={puzzle.word.toUpperCase()}>
         <div>A Wordle puzzle from {puzzle.author}</div>
+
         <Game />
       </GameProvider>
     </GuessProvider>
   );
 }
 
-export default Wordley;
+export default WordleRoute;
